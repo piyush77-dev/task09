@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webpage with Four Sections</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            width: 22%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .box img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .box h2 {
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                width: 45%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <img src="https://img.icons8.com/ios-filled/100/home.png" alt="Home Icon">
+            <h2>Home</h2>
+        </div>
+        <div class="box">
+            <img src="https://img.icons8.com/ios-filled/100/about.png" alt="About Icon">
+            <h2>About</h2>
+        </div>
+        <div class="box">
+            <img src="https://img.icons8.com/ios-filled/100/image.png" alt="Gallery Icon">
+            <h2>Gallery</h2>
+        </div>
+        <div class="box">
+            <img src="https://img.icons8.com/ios-filled/100/phone.png" alt="Contact Icon">
+            <h2>Contact</h2>
+        </div>
+    </div>
+
+</body>
+</html>
